@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - master
 
 jobs:
   say-hello:
@@ -11,3 +12,6 @@ jobs:
     steps:
       - name: Print a Message
         run: echo "Hello! A Push detected on Main Branch"
+
+      - name: Print a Second Message
+        run: echo "Hello! A Second Push detected on Main Branch"
