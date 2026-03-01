@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pipenv install pytest
+          pipenv install -r requirement.txt
 
       - name: Run test
         run: | 
