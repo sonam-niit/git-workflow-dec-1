@@ -3,7 +3,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "react-app1/**" # if push happes to only React Project Then only execute
 
+  workflow_dispatch: # to run pipeline manually
 jobs:
   build:
     runs-on: ubuntu-latest
